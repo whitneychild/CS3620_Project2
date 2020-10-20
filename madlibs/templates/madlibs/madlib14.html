@@ -1,0 +1,33 @@
+{% extends 'madlibs/base.html' %}
+{% include 'madlibs/index.html' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mad Libs</title>
+</head>
+<body>
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>TV Show Madlib</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>I was sitting on my couch looking at my {{ input_list.noun }} when the cool new show "{{ input_list.adjective }} dogs" came on the tv. It's filmed in {{ input_list.city }}.</p>
+                <p>It's about a {{ input_list.noun2 }} that makes a new friend. They also meet {{ input_list.pronoun }}.</p>
+                <p>The sequel is about a {{ input_list.verb }}ing {{ input_list.noun3 }}.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

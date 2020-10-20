@@ -1,0 +1,33 @@
+{% extends 'madlibs/base.html' %}
+{% include 'madlibs/index.html' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mad Libs</title>
+</head>
+<body>
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>At the Park Madlib</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Today my super sweet {{ input_list.noun }} came with me to the {{ input_list.adjective }} city of {{ input_list.city }}.</p>
+                <p>They brought their pet {{ input_list.noun2 }} with them. We decided to go to the park. At the park we saw {{ input_list.pronoun }}.</p>
+                <p>They are really funny when they {{ input_list.verb }}. They even brought their {{ input_list.noun3 }} with them.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

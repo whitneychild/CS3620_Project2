@@ -1,0 +1,33 @@
+{% extends 'madlibs/base.html' %}
+{% include 'madlibs/index.html' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mad Libs</title>
+</head>
+<body>
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>In the Sky Madlib</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Walking around my neighborhood with my {{ input_list.noun }} I looked up in the sky and saw a {{ input_list.adjective }} flying over {{ input_list.city }}.</p>
+                <p>Sometimes I take my {{ input_list.noun2 }} on a walk with me instead. I've even went on a walk with {{ input_list.pronoun }} before.</p>
+                <p>They asked me to {{ input_list.verb }} with them and their {{ input_list.noun3 }}.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

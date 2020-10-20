@@ -1,0 +1,33 @@
+{% extends 'madlibs/base.html' %}
+{% include 'madlibs/index.html' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mad Libs</title>
+</head>
+<body>
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Lets go Swimming Madlib</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Today I went swimming with my {{ input_list.noun }} at the {{ input_list.adjective }} swimming pool in {{ input_list.city }}.</p>
+                <p>My friend came with me and brought their {{ input_list.noun2 }}. When we were there we saw {{ input_list.pronoun }} jumping off the diving board.</p>
+                <p>They were there to {{ input_list.verb }} and hang out with their {{ input_list.noun3 }}.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

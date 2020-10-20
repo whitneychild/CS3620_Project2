@@ -1,0 +1,33 @@
+{% extends 'madlibs/base.html' %}
+{% include 'madlibs/index.html' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mad Libs</title>
+</head>
+<body>
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Food Madlib</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>I love when my {{ input_list.noun }} brings me home some {{ input_list.adjective }} food from {{ input_list.city }}.</p>
+                <p>Other times it's better when my {{ input_list.noun2 }} brings me something delicious. Sometimes I share with {{ input_list.pronoun }}.</p>
+                <p>But most the time I just {{ input_list.verb }} and try to hide so I only have to share with my {{ input_list.noun3 }}.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>
